@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proceso de Matrícula UPEU — Arquitectura de Negocio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts: Playfair Display + Source Sans 3 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       HEADER INSTITUCIONAL
+  ══════════════════════════════════════════ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <div class="brand-emblem">
+          <span class="emblem-cross">✛</span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Universidad Peruana Unión</span>
+          <span class="brand-sub">Arquitectura Empresarial · TOGAF ADM</span>
+        </div>
+      </div>
+      <nav class="header-nav">
+        <a href="#proceso">Proceso</a>
+        <a href="#as-is">AS-IS</a>
+        <a href="#to-be">TO-BE</a>
+        <a href="#comparativa">Comparativa</a>
+        <a href="#beneficios">Beneficios</a>
+      </nav>
+    </div>
+    <div class="header-stripe"></div>
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-content">
+      <div class="hero-label">Fase B · Arquitectura de Negocio</div>
+      <h1 class="hero-title">Proceso de Matrícula<br /><em>UPEU</em></h1>
+      <p class="hero-desc">
+        Análisis, modelado y rediseño del proceso de matrícula estudiantil
+        bajo el marco de referencia TOGAF ADM — del estado actual AS-IS
+        hacia el estado optimizado TO-BE.
+      </p>
+      <div class="hero-badges">
+        <span class="badge badge-virtual">⬡ Etapas Virtuales</span>
+        <span class="badge badge-presencial">◉ Etapas Presenciales</span>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">8</span><span class="stat-lbl">Etapas del proceso</span></div>
+      <div class="stat-sep"></div>
+      <div class="stat"><span class="stat-num">6</span><span class="stat-lbl">Etapas virtuales</span></div>
+      <div class="stat-sep"></div>
+      <div class="stat"><span class="stat-num">2</span><span class="stat-lbl">Etapas presenciales</span></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       PROCESO: DIAGRAMA DE FLUJO
+  ══════════════════════════════════════════ -->
+  <section class="section" id="proceso">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Flujo del Proceso</div>
+        <h2>Las 8 Etapas de Matrícula</h2>
+        <p>Haga clic en cada etapa para ver su descripción detallada, modalidad y rol responsable.</p>
+      </div>
+
+      <!-- Leyenda de modalidad -->
+      <div class="legend">
+        <div class="legend-item">
+          <span class="legend-dot dot-virtual"></span>
+          <span>Etapa Virtual</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot dot-presencial"></span>
+          <span>Etapa Presencial</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot dot-condicional"></span>
+          <span>Condicional</span>
+        </div>
+      </div>
+
+      <!-- Grid de pasos -->
+      <div class="steps-flow">
+        <!-- Paso 1 -->
+        <div class="step-card" data-step="1" data-modal="virtual"
+             data-title="Aceptación del Compromiso de Honor"
+             data-desc="El estudiante lee y acepta formalmente el compromiso de honor institucional a través del sistema virtual de matrícula. Este paso es el punto de entrada al proceso y es prerrequisito para continuar con las etapas siguientes."
+             data-actor="Estudiante / Sistema SGA"
+             data-modal-type="Virtual">
+          <div class="step-number">01</div>
+          <div class="step-icon">&#9998;</div>
+          <div class="step-content">
+            <h3>Compromiso de Honor</h3>
+            <p>Aceptación institucional</p>
+          </div>
+          <div class="step-badge virtual-badge">Virtual</div>
+        </div>
+
+        <div class="step-arrow">&#8594;</div>
+
+        <!-- Paso 2 -->
+        <div class="step-card" data-step="2" data-modal="virtual"
+             data-title="Validación de Datos Personales"
+             data-desc="El estudiante revisa y actualiza su información personal en el sistema: datos de identificación, contacto, domicilio y familia. El sistema verifica la completitud y formato de los datos ingresados antes de habilitar la siguiente etapa."
+             data-actor="Estudiante / Sistema SGA"
+             data-modal-type="Virtual">
+          <div class="step-number">02</div>
+          <div class="step-icon">&#128100;</div>
+          <div class="step-content">
+            <h3>Datos Personales</h3>
+            <p>Validación de identidad</p>
+          </div>
+          <div class="step-badge virtual-badge">Virtual</div>
+        </div>
+
+        <div class="step-arrow">&#8594;</div>
+
+        <!-- Paso 3 -->
+        <div class="step-card" data-step="3" data-modal="virtual"
+             data-title="Validación del Responsable Financiero"
+             data-desc="El estudiante registra o confirma los datos del responsable financiero que asumirá las obligaciones económicas de la matrícula. Esta información es indispensable para la generación del contrato de servicios educativos en la Etapa 6."
+             data-actor="Estudiante / Gestión Financiera"
+             data-modal-type="Virtual">
+          <div class="step-number">03</div>
+          <div class="step-icon">&#128179;</div>
+          <div class="step-content">
+            <h3>Responsable Financiero</h3>
+            <p>Validación económica</p>
+          </div>
+          <div class="step-badge virtual-badge">Virtual</div>
+        </div>
+
+        <div class="step-arrow">&#8594;</div>
+
+        <!-- Paso 4 -->
+        <div class="step-card" data-step="4" data-modal="virtual"
+             data-title="Selección de Cursos"
+             data-desc="El estudiante selecciona las asignaturas correspondientes a su plan de estudios para el periodo académico. El sistema filtra la oferta según ciclo, prerrequisitos cumplidos y disponibilidad de plazas, verificando conflictos de horario en tiempo real."
+             data-actor="Estudiante / Sistema SGA"
+             data-modal-type="Virtual">
+          <div class="step-number">04</div>
+          <div class="step-icon">&#128218;</div>
+          <div class="step-content">
+            <h3>Selección de Cursos</h3>
+            <p>Carga académica</p>
+          </div>
+          <div class="step-badge virtual-badge">Virtual</div>
+        </div>
+
+        <!-- Salto de fila en móvil / continuo en desktop -->
+        <div class="step-arrow step-arrow-down">&#8595;</div>
+        <div class="step-row-break"></div>
+
+        <!-- Paso 5 -->
+        <div class="step-card" data-step="5" data-modal="virtual"
+             data-title="Generación de Pre-Matrícula"
+             data-desc="El sistema consolida la selección académica confirmada y genera el documento de pre-matrícula. Este documento sirve como constancia provisional y base para la generación del contrato definitivo. El estudiante recibe una notificación con el resumen."
+             data-actor="Sistema SGA / ORA"
+             data-modal-type="Virtual">
+          <div class="step-number">05</div>
+          <div class="step-icon">&#128196;</div>
+          <div class="step-content">
+            <h3>Pre-Matrícula</h3>
+            <p>Documento provisional</p>
+          </div>
+          <div class="step-badge virtual-badge">Virtual</div>
+        </div>
+
+        <div class="step-arrow">&#8594;</div>
+
+        <!-- Paso 6 -->
+        <div class="step-card" data-step="6" data-modal="virtual"
+             data-title="Generación del Contrato"
+             data-desc="El sistema financiero genera el contrato de prestación de servicios educativos con los montos de pensiones, fechas de pago y condiciones legales. El estudiante y/o responsable financiero revisan y aceptan el contrato para formalizar la matrícula."
+             data-actor="Sistema SGF / Gestión Financiera"
+             data-modal-type="Virtual">
+          <div class="step-number">06</div>
+          <div class="step-icon">&#128203;</div>
+          <div class="step-content">
+            <h3>Generación de Contrato</h3>
+            <p>Formalización financiera</p>
+          </div>
+          <div class="step-badge virtual-badge">Virtual</div>
+        </div>
+
+        <div class="step-arrow">&#8594;</div>
+
+        <!-- Paso 7 -->
+        <div class="step-card step-card--presencial" data-step="7" data-modal="presencial"
+             data-title="Entrega del Compromiso de Honor (Facultad)"
+             data-desc="El estudiante debe acudir físicamente a la secretaría de su facultad para entregar el compromiso de honor firmado en formato físico. El personal administrativo verifica el documento y actualiza el expediente del estudiante. Esta etapa representa la principal ruptura del flujo digital del proceso."
+             data-actor="Estudiante / Secretaría de Facultad"
+             data-modal-type="Presencial">
+          <div class="step-number">07</div>
+          <div class="step-icon">&#127981;</div>
+          <div class="step-content">
+            <h3>Entrega Facultad</h3>
+            <p>Documento físico</p>
+          </div>
+          <div class="step-badge presencial-badge">Presencial</div>
+        </div>
+
+        <div class="step-arrow">&#8594;</div>
+
+        <!-- Paso 8 -->
+        <div class="step-card step-card--presencial step-card--condicional" data-step="8" data-modal="presencial"
+             data-title="Centro Médico"
+             data-desc="Esta etapa aplica exclusivamente a estudiantes que no completaron la revisión médica en el semestre 2018-I. Los estudiantes afectados deben acudir presencialmente al centro médico para regularizar su situación de salud como requisito para formalizar la matrícula."
+             data-actor="Estudiante / Centro Médico"
+             data-modal-type="Presencial (Condicional)">
+          <div class="step-number">08</div>
+          <div class="step-icon">&#9877;</div>
+          <div class="step-content">
+            <h3>Centro Médico</h3>
+            <p>Condicional · 2018-I</p>
+          </div>
+          <div class="step-badge condicional-badge">Condicional</div>
+        </div>
+      </div><!-- /steps-flow -->
+
+      <!-- Panel de detalle del paso -->
+      <div class="step-detail-panel" id="stepDetailPanel">
+        <div class="panel-inner">
+          <div class="panel-header">
+            <div class="panel-step-badge" id="panelModalType"></div>
+            <button class="panel-close" id="panelClose" aria-label="Cerrar">&#10005;</button>
+          </div>
+          <div class="panel-step-number" id="panelStepNum"></div>
+          <h3 class="panel-title" id="panelTitle"></h3>
+          <p class="panel-desc" id="panelDesc"></p>
+          <div class="panel-actor">
+            <span class="actor-label">Actor responsable</span>
+            <span class="actor-value" id="panelActor"></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECCIÓN AS-IS
+  ══════════════════════════════════════════ -->
+  <section class="section section--dark" id="as-is">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag section-tag--light">Estado Actual</div>
+        <h2>Modelo AS-IS del Proceso</h2>
+        <p>El proceso actual de matrícula en su estado operativo real, con sus características, limitaciones y puntos críticos.</p>
+      </div>
+
+      <div class="asis-grid">
+        <div class="asis-card">
+          <div class="asis-icon">&#9654;</div>
+          <h4>Flujo Secuencial Estricto</h4>
+          <p>Cada etapa depende de la finalización de la anterior. No existe procesamiento paralelo ni concurrente entre actividades independientes.</p>
+        </div>
+        <div class="asis-card">
+          <div class="asis-icon">&#9993;</div>
+          <h4>Hibridez Virtual-Presencial</h4>
+          <p>Las primeras seis etapas son virtuales, pero las dos últimas requieren presencia física, generando discontinuidad en la experiencia del estudiante.</p>
+        </div>
+        <div class="asis-card">
+          <div class="asis-icon">&#9888;</div>
+          <h4>Validaciones Aisladas</h4>
+          <p>Las validaciones de datos personales, financieros y académicos se realizan en sistemas separados sin integración en tiempo real entre ellos.</p>
+        </div>
+        <div class="asis-card">
+          <div class="asis-icon">&#128203;</div>
+          <h4>Gestión Manual de Documentos</h4>
+          <p>La entrega física del compromiso de honor implica gestión en soporte papel, con riesgos de pérdida, deterioro y ausencia de trazabilidad digital.</p>
+        </div>
+        <div class="asis-card">
+          <div class="asis-icon">&#8987;</div>
+          <h4>Congestión en Picos de Demanda</h4>
+          <p>Las facultades y el centro médico experimentan alta afluencia durante el periodo de matrícula, generando colas y tiempos de espera prolongados.</p>
+        </div>
+        <div class="asis-card">
+          <div class="asis-icon">&#128257;</div>
+          <h4>Duplicidad de Datos</h4>
+          <p>Los estudiantes ingresan información que ya existe en los sistemas de periodos anteriores, generando redundancia y riesgo de inconsistencias.</p>
+        </div>
+      </div>
+
+      <!-- Puntos críticos -->
+      <div class="critical-section">
+        <h3 class="critical-title">&#9888; Puntos Críticos del Proceso Actual</h3>
+        <div class="critical-list">
+          <div class="critical-item">
+            <div class="critical-icon critical-red">!</div>
+            <div>
+              <strong>Demora en revisión y validación</strong>
+              <p>La verificación manual de documentos y datos en cada etapa genera demoras acumuladas que extienden innecesariamente el tiempo total del proceso.</p>
+            </div>
+          </div>
+          <div class="critical-item">
+            <div class="critical-icon critical-red">!</div>
+            <div>
+              <strong>Duplicidad de ingreso de datos</strong>
+              <p>El estudiante debe reingresar información personal y financiera que ya consta en el sistema, lo que representa trabajo redundante y riesgo de inconsistencia.</p>
+            </div>
+          </div>
+          <div class="critical-item">
+            <div class="critical-icon critical-amber">&#9651;</div>
+            <div>
+              <strong>Pasos manuales sin valor agregado</strong>
+              <p>La entrega física del compromiso de honor en la facultad es una actividad manual que no agrega valor al proceso y que puede ser reemplazada por un mecanismo digital.</p>
+            </div>
+          </div>
+          <div class="critical-item">
+            <div class="critical-icon critical-amber">&#9651;</div>
+            <div>
+              <strong>Falta de integración sistémica</strong>
+              <p>Los sistemas de gestión académica, financiera y médica operan de manera desacoplada, impidiendo el intercambio automático de información y la sincronización del estado de la matrícula.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECCIÓN TO-BE
+  ══════════════════════════════════════════ -->
+  <section class="section" id="to-be">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Estado Propuesto</div>
+        <h2>Modelo TO-BE del Proceso Mejorado</h2>
+        <p>El proceso rediseñado incorpora automatización, integración sistémica y digitalización integral para una experiencia fluida y eficiente.</p>
+      </div>
+
+      <div class="tobe-timeline">
+
+        <div class="tobe-item">
+          <div class="tobe-marker">1</div>
+          <div class="tobe-card">
+            <div class="tobe-improve-badge">&#8679; Mejora Alta</div>
+            <h4>Firma Digital con Validez Legal</h4>
+            <p>La aceptación del compromiso de honor se formaliza mediante firma electrónica con sello de tiempo, IP y huella de sesión. El documento firmado se almacena automáticamente en el repositorio documental institucional, eliminando la necesidad de entrega física.</p>
+          </div>
+        </div>
+
+        <div class="tobe-item">
+          <div class="tobe-marker">2</div>
+          <div class="tobe-card">
+            <div class="tobe-improve-badge">&#8679; Mejora Alta</div>
+            <h4>Validación Automática con Pre-Carga de Datos</h4>
+            <p>El sistema pre-carga automáticamente los datos existentes del estudiante. La validación de identidad se realiza mediante integración con RENIEC. Solo se solicitan actualizaciones de campos modificados, reduciendo el tiempo de ingreso.</p>
+          </div>
+        </div>
+
+        <div class="tobe-item">
+          <div class="tobe-marker">3</div>
+          <div class="tobe-card">
+            <div class="tobe-improve-badge">&#8679; Mejora Media</div>
+            <h4>Verificación Financiera Integrada</h4>
+            <p>La validación del responsable financiero se fusiona con la verificación de situación económica del estudiante. El sistema pre-carga y verifica automáticamente, calculando la escala de pagos correspondiente sin intervención manual.</p>
+          </div>
+        </div>
+
+        <div class="tobe-item">
+          <div class="tobe-marker">4</div>
+          <div class="tobe-card">
+            <div class="tobe-improve-badge">&#8679; Mejora Alta</div>
+            <h4>Motor de Recomendación Académica</h4>
+            <p>El sistema sugiere los cursos a matricular según avance curricular, historial académico y carga recomendada. Verifica disponibilidad y conflictos en tiempo real. Lista de espera automatizada para cursos con cupo lleno.</p>
+          </div>
+        </div>
+
+        <div class="tobe-item">
+          <div class="tobe-marker">5-6</div>
+          <div class="tobe-card">
+            <div class="tobe-improve-badge">&#8679; Mejora Media</div>
+            <h4>Pre-Matrícula y Contrato Automáticos</h4>
+            <p>La pre-matrícula se genera instantáneamente y el contrato se produce y firma electrónicamente en un flujo continuo. La matrícula queda activada automáticamente al completarse la firma del contrato, sin esperas ni intervención manual.</p>
+          </div>
+        </div>
+
+        <div class="tobe-item">
+          <div class="tobe-marker">7</div>
+          <div class="tobe-card">
+            <div class="tobe-improve-badge tobe-best">&#8679; Mejora Muy Alta</div>
+            <h4>Eliminación de Entrega Física</h4>
+            <p>Esta etapa se elimina como proceso presencial obligatorio. El repositorio digital centralizado permite a las facultades acceder a los compromisos de honor firmados electrónicamente en cualquier momento, con filtros y exportación.</p>
+          </div>
+        </div>
+
+        <div class="tobe-item">
+          <div class="tobe-marker">8</div>
+          <div class="tobe-card">
+            <div class="tobe-improve-badge">&#8679; Mejora Alta</div>
+            <h4>Gestión de Citas Médicas Automatizada</h4>
+            <p>El sistema identifica automáticamente a los estudiantes con pendientes médicos y les envía notificaciones anticipadas. Un módulo de agenda digital permite programar la revisión según disponibilidad del centro médico, con actualización automática del estado de matrícula.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       TABLA COMPARATIVA AS-IS vs TO-BE
+  ══════════════════════════════════════════ -->
+  <section class="section section--accent" id="comparativa">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag section-tag--light">Análisis Comparativo</div>
+        <h2>AS-IS vs TO-BE</h2>
+        <p>Comparación dimensional entre el proceso actual y el proceso rediseñado propuesto.</p>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Dimensión</th>
+              <th class="col-asis">AS-IS · Estado Actual</th>
+              <th class="col-tobe">TO-BE · Estado Propuesto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Modalidad predominante</strong></td>
+              <td class="col-asis">Híbrida (virtual + presencial obligatorio)</td>
+              <td class="col-tobe">Predominantemente digital</td>
+            </tr>
+            <tr>
+              <td><strong>Pasos presenciales obligatorios</strong></td>
+              <td class="col-asis">2 etapas presenciales</td>
+              <td class="col-tobe">0 obligatorios (opcionales con cita)</td>
+            </tr>
+            <tr>
+              <td><strong>Nivel de automatización</strong></td>
+              <td class="col-asis">Bajo — validaciones manuales</td>
+              <td class="col-tobe">Alto — validaciones automáticas</td>
+            </tr>
+            <tr>
+              <td><strong>Integración de sistemas</strong></td>
+              <td class="col-asis">Baja — sistemas aislados</td>
+              <td class="col-tobe">Alta — sistemas integrados vía API</td>
+            </tr>
+            <tr>
+              <td><strong>Generación de documentos</strong></td>
+              <td class="col-asis">Semiautomática</td>
+              <td class="col-tobe">Totalmente automática</td>
+            </tr>
+            <tr>
+              <td><strong>Firma de documentos</strong></td>
+              <td class="col-asis">Física manuscrita</td>
+              <td class="col-tobe">Electrónica con validez legal</td>
+            </tr>
+            <tr>
+              <td><strong>Trazabilidad del proceso</strong></td>
+              <td class="col-asis">Parcial y no centralizada</td>
+              <td class="col-tobe">Completa y en tiempo real</td>
+            </tr>
+            <tr>
+              <td><strong>Tiempo estimado del proceso</strong></td>
+              <td class="col-asis">2–5 días hábiles</td>
+              <td class="col-tobe">30–90 minutos en línea</td>
+            </tr>
+            <tr>
+              <td><strong>Atención de casos especiales</strong></td>
+              <td class="col-asis">Manual, propensa a omisiones</td>
+              <td class="col-tobe">Automatizada y diferenciada</td>
+            </tr>
+            <tr>
+              <td><strong>Experiencia del estudiante</strong></td>
+              <td class="col-asis">Fragmentada, con desplazamientos</td>
+              <td class="col-tobe">Fluida, centralizada y autoguiada</td>
+            </tr>
+            <tr>
+              <td><strong>Carga del personal administrativo</strong></td>
+              <td class="col-asis">Alta en periodos de matrícula</td>
+              <td class="col-tobe">Reducida — solo excepciones</td>
+            </tr>
+            <tr>
+              <td><strong>Almacenamiento documental</strong></td>
+              <td class="col-asis">Físico + digital (duplicado)</td>
+              <td class="col-tobe">Solo digital centralizado</td>
+            </tr>
+            <tr>
+              <td><strong>Notificaciones al estudiante</strong></td>
+              <td class="col-asis">Limitadas o reactivas</td>
+              <td class="col-tobe">Proactivas y multicanal</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BENEFICIOS
+  ══════════════════════════════════════════ -->
+  <section class="section" id="beneficios">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Resultados Esperados</div>
+        <h2>Beneficios de la Mejora del Proceso</h2>
+        <p>El rediseño del proceso de matrícula genera valor medible para el estudiante, la institución y la gestión estratégica de la UPEU.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-group">
+          <div class="benefit-group-header">
+            <div class="benefit-group-icon">&#128100;</div>
+            <h3>Para el Estudiante</h3>
+          </div>
+          <ul class="benefit-list">
+            <li><span class="benefit-check">&#10003;</span> Tiempo de matrícula reducido de días a minutos</li>
+            <li><span class="benefit-check">&#10003;</span> Disponibilidad 24/7 desde cualquier dispositivo</li>
+            <li><span class="benefit-check">&#10003;</span> Eliminación de desplazamientos innecesarios</li>
+            <li><span class="benefit-check">&#10003;</span> Panel de control con estado en tiempo real</li>
+            <li><span class="benefit-check">&#10003;</span> Notificaciones proactivas y soporte en línea</li>
+            <li><span class="benefit-check">&#10003;</span> Recomendación inteligente de cursos</li>
+          </ul>
+        </div>
+
+        <div class="benefit-group">
+          <div class="benefit-group-header">
+            <div class="benefit-group-icon">&#127963;</div>
+            <h3>Para la Institución</h3>
+          </div>
+          <ul class="benefit-list">
+            <li><span class="benefit-check">&#10003;</span> Reducción de costos operativos administrativos</li>
+            <li><span class="benefit-check">&#10003;</span> Mayor calidad y consistencia de los datos</li>
+            <li><span class="benefit-check">&#10003;</span> Eliminación del archivo físico de documentos</li>
+            <li><span class="benefit-check">&#10003;</span> Reportes y dashboards en tiempo real</li>
+            <li><span class="benefit-check">&#10003;</span> Escalabilidad sin incremento de recursos</li>
+            <li><span class="benefit-check">&#10003;</span> Cumplimiento normativo SUNEDU facilitado</li>
+          </ul>
+        </div>
+
+        <div class="benefit-group">
+          <div class="benefit-group-header">
+            <div class="benefit-group-icon">&#128200;</div>
+            <h3>Beneficios Estratégicos</h3>
+          </div>
+          <ul class="benefit-list">
+            <li><span class="benefit-check">&#10003;</span> Posicionamiento como institución innovadora</li>
+            <li><span class="benefit-check">&#10003;</span> Alineación con transformación digital educativa</li>
+            <li><span class="benefit-check">&#10003;</span> Base sólida para fases C, D y E del ADM</li>
+            <li><span class="benefit-check">&#10003;</span> Arquitectura empresarial integrada y coherente</li>
+            <li><span class="benefit-check">&#10003;</span> Trazabilidad completa para auditorías</li>
+            <li><span class="benefit-check">&#10003;</span> Cultura de mejora continua institucionalizada</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Indicadores clave -->
+      <div class="kpi-bar">
+        <div class="kpi">
+          <div class="kpi-val">&#8595; 90%</div>
+          <div class="kpi-lbl">Tiempo de proceso</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-val">&#8595; 70%</div>
+          <div class="kpi-lbl">Carga administrativa</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-val">&#8679; 100%</div>
+          <div class="kpi-lbl">Trazabilidad digital</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-val">0</div>
+          <div class="kpi-lbl">Pasos presenciales obligatorios</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="emblem-cross small">✛</span>
+        <span>Universidad Peruana Unión</span>
+      </div>
+      <div class="footer-info">
+        <p>Fase B: Arquitectura de Negocio · TOGAF ADM</p>
+        <p>Proceso de Matrícula UPEU · Versión 1.0</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal de detalle del paso -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Cerrar">&#10005;</button>
+      <div class="modal-step-tag" id="modalTag"></div>
+      <div class="modal-step-number" id="modalNum"></div>
+      <h2 class="modal-title" id="modalTitle"></h2>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-actor-row">
+        <span class="modal-actor-label">Actores responsables</span>
+        <span class="modal-actor-val" id="modalActor"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
